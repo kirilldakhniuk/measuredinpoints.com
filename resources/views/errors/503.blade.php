@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
-<head>
-    @include('partials.head')
+    <head>
+        @include('partials.head')
 
-    <style>
-        .scroller {
-            animation: 20s scroll alternate infinite;
-        }
-
-        @keyframes scroll {
-            from {
-                transform: translateX(0);
+        <style>
+            .scroller {
+                animation: 20s scroll alternate infinite;
             }
 
-            to {
-                transform: translateX(-100%);
+            @keyframes scroll {
+                from {
+                    transform: translateX(0);
+                }
+
+                to {
+                    transform: translateX(-100%);
+                }
             }
-        }
-    </style>
-</head>
-<body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] flex p-6 lg:p-8 items-center justify-center min-h-screen flex-col">
-    <div class="overflow-hidden absolute top-4 left-0 right-0 bg-[#0a0a0a] dark:bg-white text-white dark:text-[#0a0a0a]">
-        <div class="scroller flex space-x-1 whitespace-nowrap text-lg">
-            @for ($i = 0; $i < 31; $i++)
-                <span class="py-1 px-3">Coming soon</span>
-            @endfor
+        </style>
+    </head>
+    <body
+        class="flex min-h-screen flex-col items-center justify-center bg-[#FDFDFC] p-6 text-[#1b1b18] lg:p-8 dark:bg-[#0a0a0a]"
+    >
+        <div
+            class="absolute top-4 right-0 left-0 overflow-hidden bg-[#0a0a0a] text-white dark:bg-white dark:text-[#0a0a0a]"
+        >
+            <div class="scroller flex space-x-1 text-lg whitespace-nowrap">
+                @for ($i = 0; $i < 31; $i++)
+                    <span class="px-3 py-1">Coming soon</span>
+                @endfor
+            </div>
         </div>
-    </div>
 
-    <h1 class="text-3xl dark:text-white">Our plans are measured in points — Scrum Masters</h1>
+        <h1 class="text-3xl dark:text-white">Our plans are measured in points — Scrum Masters</h1>
 
-    <div class="overflow-hidden absolute bottom-4 left-0 right-0 bg-[#0a0a0a] dark:bg-white text-white dark:text-[#0a0a0a]">
-        <div class="scroller flex space-x-1 whitespace-nowrap text-lg">
-            @for ($i = 0; $i < 31; $i++)
-                <span class="py-1 px-3">Coming soon</span>
-            @endfor
+        <div
+            class="absolute right-0 bottom-4 left-0 overflow-hidden bg-[#0a0a0a] text-white dark:bg-white dark:text-[#0a0a0a]"
+        >
+            <div class="scroller flex space-x-1 text-lg whitespace-nowrap">
+                @for ($i = 0; $i < 31; $i++)
+                    <span class="px-3 py-1">Coming soon</span>
+                @endfor
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>

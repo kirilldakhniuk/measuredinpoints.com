@@ -1,18 +1,13 @@
 <x-layouts.main :title="__('Home')">
-    <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
-        <div class="grid auto-rows-min gap-4 md:grid-cols-3">
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-            <div class="relative aspect-video overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-                <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-            </div>
-        </div>
-        <div class="relative h-full flex-1 overflow-hidden rounded-xl border border-neutral-200 dark:border-neutral-700">
-            <x-placeholder-pattern class="absolute inset-0 size-full stroke-gray-900/20 dark:stroke-neutral-100/20" />
-        </div>
+    <div class="flex flex-col items-center gap-12">
+        <h1 class="text-3xl dark:text-white">Our plans are measured in points — Scrum Masters</h1>
+        <a
+            href=""
+            class="hover:bg-accent border-3 border-black px-6 py-3 text-xl shadow-[4px_4px_0px_0px_rgba(0,_0,_0,_0.8)] hover:text-white dark:border-white dark:text-white dark:shadow-[4px_4px_0px_0px_rgba(255,_255,_255,_0.9)] dark:hover:text-black"
+        >
+            Start
+        </a>
     </div>
-</x-layouts.app>
+
+    <footer></footer>
+</x-layouts.main>
