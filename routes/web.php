@@ -1,8 +1,10 @@
 <?php
 
+use App\Livewire\CreateMeasure;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
+use App\Livewire\ShowMeasure;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -11,6 +13,9 @@ Route::get('/', function () {
 
 Route::view('/', 'index')
     ->name('home');
+
+Route::get('measures/create', CreateMeasure::class)->name('measures.create');
+Route::get('measures/{measure}/show', ShowMeasure::class)->name('measures.show');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])

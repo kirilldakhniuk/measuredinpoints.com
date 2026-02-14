@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="dark">
     <head>
-        <head>
-            @include('partials.head')
-        </head>
+        @include('partials.head')
     </head>
     <body
         class="flex min-h-screen flex-col items-center justify-between bg-[#FDFDFC] p-6 text-[#1b1b18] lg:p-8 dark:bg-[#0a0a0a]"
